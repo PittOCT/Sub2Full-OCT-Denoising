@@ -1,7 +1,18 @@
 # Sub2Full-OCT-Denoising
 The official code of the paper [Sub2Full: split spectrum to boost OCT despeckling without clean data](https://opg.optica.org/ol/abstract.cfm?URI=ol-49-11-3062).  
+### ⚠️ Important Note
+Sub2Full is **highly sensitive to the speckle pattern** in OCT images. To apply this model to your own data, you **must construct a custom dataset** as follows:
+
+- **Low axial resolution input (First Repeated B-scan)**:
+  - Apply Gaussian window on OCT interference fringes 
+  - Apply standard OCT preprocessing 
+
+- **High axial resolution target (Second Repeated B-scan)**:  
+  - Apply standard OCT preprocessing only
+
+Once this paired dataset is prepared, you can retrain the Sub2Full model to achieve optimal results on your data.
 ## Test
-To test the performance of Sub2Full, you can use the instructions as follows:  
+To test the performance of Sub2Full on our visible light OCT images, you can use the instructions as follows:  
 - Install necessary python packages using requirements.txt.
 - Run test.py
 ## Citation
