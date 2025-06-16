@@ -1,6 +1,6 @@
 # Sub2Full-OCT-Denoising
 The official code of the paper [Sub2Full: split spectrum to boost OCT despeckling without clean data](https://opg.optica.org/ol/abstract.cfm?URI=ol-49-11-3062).  
-Contributor: Lingyun Wang | 📧 [Email](lingyunwang@pitt.edu) | 🎓 [Google Scholar](https://scholar.google.com/citations?user=V6S2RtUAAAAJ&hl=en)
+Contributor: Lingyun Wang | 📧 [Email](mailto:lingyunwang@pitt.edu) | 🎓 [Google Scholar](https://scholar.google.com/citations?user=V6S2RtUAAAAJ&hl=en)
 ### ⚠️ Important Note
 Sub2Full is **highly sensitive to the speckle pattern** in OCT images (as self-supervised methods are typically not designed for cross-domain generalization). To apply this model to your own data, you **must construct a custom dataset** as follows:
 
