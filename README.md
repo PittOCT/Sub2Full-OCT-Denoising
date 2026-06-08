@@ -3,6 +3,9 @@ The official code of the paper [Sub2Full: split spectrum to boost OCT despecklin
 Contributor: Lingyun Wang | 📧 [Email](mailto:lingyunwang@pitt.edu) | 🎓 [Google Scholar](https://scholar.google.com/citations?user=V6S2RtUAAAAJ&hl=en)
 ### ⚠️ Important Note
 Sub2Full is **highly sensitive to the speckle pattern** in OCT images (as self-supervised methods are typically not designed for cross-domain generalization). To apply this model to your own data, you **must construct a custom dataset** as follows:
+<p align="center">
+  <img src="github_fig.png" width="800">
+</p>
 
 - **Low axial resolution input (First Repeated B-scan)**:
   - Apply Gaussian window on OCT interference fringes 
